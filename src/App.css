@@ -1,42 +1,138 @@
+body {
+  background: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExOXN6Y3J6cTJlOHlqMGJvNmxuMmc4dGZ4emRhencxeW90a2tvOXVmMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26ueZ3ADWRdWhWc4o/giphy.gif');
+  background-repeat: repeat;
+  position: absolute;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0;
+}
+
+h2 {
+  margin-bottom: -1rem;
+}
+
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  width: 366px;
+  padding: 0;
+
   text-align: center;
-}
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
+  z-index: 3;
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+  background-color: rgba(42, 42, 216, 0.5);
+  color: #fff;
+}
+@media screen and (min-width: 480px) {
+  #root {
+    border: 2px solid white;
+    padding: 2rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  body {
+    position: relative;
+  }
+
+  h1 {
+    font-size: 3.2rem;
+  }
+
+  .gif__shadow {
+    transform: scale(1, 1);
+  }
+
+  .bottom {
+    margin-bottom: 0;
   }
 }
+/*
+.bottom {
+  margin-bottom: 1rem;
+} */
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.gif__shadow {
+  top: 0;
+  width: 366px;
+  height: 366px;
+  transform: scale(0.8, 0.8);
+
+  z-index: 1;
+  background: url('https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGUzZDRwbDRva2NyaDZ2eXMwdWJ6MHpsamp2ZG8yYzRidmcxNzVxYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XrnJ3ofl5DCtG/giphy.gif');
+  filter: drop-shadow(-14px 12px 0px white);
+
 }
 
-.card {
-  padding: 2em;
+a {
+  color: white!important;
 }
 
-.read-the-docs {
-  color: #888;
+h3 {
+  display: inline-block;
+  cursor: pointer;
+  font-weight: 200;
+
+  background:
+  linear-gradient(
+    to right,
+    white,
+    white
+  ),
+  linear-gradient(
+    to right,
+    rgba(255, 0, 0, 1),
+    rgba(255, 0, 180, 1),
+    rgba(0, 100, 200, 1)
+  );
+  background-size: 100% 2px, 0 2px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+
+  margin-top: 0;
+}
+
+h3:hover {
+  background-size: 0 2px, 100% 2px;
+}
+
+
+/* Overlay effect */
+
+:root {
+  /* --overlay-color-1: red;
+  --overlay-color-2: blue; */
+  --overlay-color-1: white;
+  --overlay-color-2: red;
+
+  --anim-duration: 3s;
+}
+
+#gradient {
+  opacity: 0.4;
+  background: none;
+}
+
+#gradient:after,
+#gradient:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+}
+
+#gradient:before {
+  background: linear-gradient(135deg, var(--overlay-color-2) 0%, var(--overlay-color-1) 100%);
+  animation: OpacityAnim var(--anim-duration) ease-in-out 0s infinite alternate;
+}
+
+#gradient:after {
+  background: linear-gradient(135deg, var(--overlay-color-1) 0%, var(--overlay-color-2) 100%);
+  animation: OpacityAnim var(--anim-duration) ease-in-out calc(-1 * var(--anim-duration)) infinite alternate;
+}
+
+@keyframes OpacityAnim {
+  0%{opacity: 1.0}
+  100%{opacity: 0.0}
 }
