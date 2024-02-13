@@ -11,5 +11,9 @@
     <div id="gradient"></div>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <style>body {opacity:0;}</style>
+    <script>
+      window.onload = function() {setTimeout(function(){document.body.style.opacity="100";},200);};
+    </script>
   </body>
 </html>
