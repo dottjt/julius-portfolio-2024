@@ -45,13 +45,13 @@ function App() {
         {/* <p>links</p> */}
         <div className='link'>
           <a href="https://www.linkedin.com/in/juliusreade/">
-            <h3>Employment</h3>
+            <h3>Employment (click me!)</h3>
             {/* <img className='logo' src={githubLogo} /> */}
           </a>
         </div>
         <div className='link'>
           <a href="https://github.com/dottjt">
-            <h3>Side Projects</h3>
+            <h3>Side Projects (also click me! ;))</h3>
             {/* <img className='logo' src={linkedinLogo} /> */}
           </a>
         </div>
