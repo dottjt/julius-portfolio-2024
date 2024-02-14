@@ -2,17 +2,24 @@ body {
   background: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExOXN6Y3J6cTJlOHlqMGJvNmxuMmc4dGZ4emRhencxeW90a2tvOXVmMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26ueZ3ADWRdWhWc4o/giphy.gif');
   background-repeat: repeat;
   position: absolute;
-
   transition: opacity 1s;
+  width: 100%;
 }
 
 h1 {
-  font-size: 2.2rem;
+  font-size: 2.6rem!important;
   margin-bottom: 0;
 }
 
 h2 {
+  font-size: 1.5rem!important;
+
   margin-bottom: -1rem;
+}
+
+.content {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 #root {
@@ -47,6 +54,10 @@ h2 {
 
   .bottom {
     margin-bottom: 0!important;
+  }
+
+  .gif__shadow:hover {
+    transform: scale(1);
   }
 }
 
