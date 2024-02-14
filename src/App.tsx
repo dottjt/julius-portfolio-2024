@@ -51,7 +51,7 @@ function App() {
         </div>
         <div className='link'>
           <a href="https://github.com/dottjt">
-            <h3>Side Projects (also click me! ;))</h3>
+            <h3>Side Projects (let's go!)</h3>
             {/* <img className='logo' src={linkedinLogo} /> */}
           </a>
         </div>
