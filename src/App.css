@@ -67,9 +67,7 @@ h2 {
 }
 
 .link a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: inline;
 }
 
 .gif__shadow {
