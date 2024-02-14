@@ -24,9 +24,8 @@ h2 {
 
 #root {
   margin: 0 auto;
-  width: 366px;
   padding: 0;
-
+  width: 100%;
   text-align: center;
 
   z-index: 3;
@@ -34,10 +33,12 @@ h2 {
   background-color: rgba(42, 42, 216, 0.5);
   color: #fff;
 }
+
 @media screen and (min-width: 480px) {
   #root {
     border: 2px solid white;
     padding: 2rem;
+    width: 366px;
   }
 
   body {
